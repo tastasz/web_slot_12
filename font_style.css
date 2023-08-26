@@ -1,0 +1,238 @@
+.header-branner-text {
+    background: -webkit-linear-gradient(#E10019, #3B0101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 !important;
+    font-size: 7rem
+}
+
+.sub-header-branner-text {
+    background: -webkit-linear-gradient(#E10019, #3B0101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 !important;
+    font-size: 4.0rem
+}
+
+.content-model-2-text-color {
+    color: #F1CF73;
+    text-shadow: 0px -1px 1px #A27700F7
+}
+
+.content-model-2-sub-text-color {
+    color: #848484;
+    text-shadow: 0px 3px 7px #646464F7;
+    font-size: 2.0rem
+}
+
+.line-id {
+    font: inherit;
+    color: #F1CF73;
+    border: 4px solid #F1CF73;
+    border-radius: 37px;
+    padding: 0.5rem 2rem;
+    font-size: 2.0rem;
+    width: fit-content;
+}
+
+.bg-header h1 {
+    font-family: "fc_minimalbold_italic";
+    font-size: 5.5rem;
+    color: #8400FF;
+    -webkit-text-stroke: 2px #fff;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.bg-header h2 {
+    font-family: "fc_minimalbold_italic";
+    font-size: 4.8rem;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px #8400FF;
+    margin-bottom: 0;
+    line-height: 130%;
+}
+
+.bg-header h3 {
+    font-family: "fc_minimalbold_italic";
+    font-size: 2rem;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    white-space: nowrap;
+
+}
+
+.bg-header h4 {
+    font-family: "fc_minimalbold_italic";
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+
+.bg-header-2 h1 {
+    font-size: 3rem;
+}
+
+.bg-header-2 h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+
+
+.bg-header-3 h1 {
+    font-size: 4.5rem;
+}
+
+.bg-header-3 h2 {
+    font-size: 2.5rem;
+}
+
+.wire-frame-theme h1 {
+    font-size: 3.0rem;
+}
+
+.wire-frame-theme h2 {
+    font-size: 1.5rem;
+}
+
+.wire-frame-theme h3 {
+    font-size: 1rem;
+}
+
+.wire-frame-theme h4 {
+    font-size: 1.2rem;
+}
+
+.index-promotion-header h1 {
+    font-size: 4rem;
+}
+
+.index-promotion-header h2 {
+    font-size: 3rem;
+}
+
+.index-promotion-text h1 {
+    font-size: 5rem;
+}
+
+.index-promotion-text h2 {
+    font-size: 3rem;
+}
+
+.index-promotion-text h3 {
+    font-size: 2.5rem;
+}
+
+.index-promotion-text h4 {
+    font-size: 4rem;
+}
+
+@media (max-width: 821px) {
+
+    .index-promotion-header h1 {
+        font-size: 3rem;
+    }
+
+    .index-promotion-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .header-branner-text {
+        font-size: 3.5rem
+    }
+
+    .sub-header-branner-text {
+        font-size: 2.0rem
+    }
+
+    .line-id {
+        font-size: 1.3rem;
+    }
+
+    .bg-header h1 {
+        font-family: "fc_minimalbold_italic";
+        font-size: 2.5rem;
+        white-space: nowrap;
+        -webkit-text-stroke: 1px #fff;
+
+    }
+
+    .bg-header h2 {
+        font-family: "fc_minimalbold_italic";
+        font-size: 2rem;
+        -webkit-text-stroke: 0.5px #8400FF;
+
+    }
+
+    .bg-header h3 {
+        font-family: "fc_minimalbold_italic";
+        font-size: 0.9rem;
+
+
+    }
+
+    .bg-header h4 {
+        font-family: "fc_minimalbold_italic";
+        font-size: 1rem;
+
+    }
+
+    .bg-header-2 h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .bg-header-2 h2 {
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+
+
+
+    .bg-header-3 h1 {
+        font-size: 3.0rem;
+    }
+
+    .bg-header-3 h2 {
+        font-size: 2rem;
+    }
+
+    .wire-frame-theme {
+        padding: 2rem 1rem !important;
+    }
+
+    .wire-frame-theme h1 {
+        font-size: 2.0rem;
+    }
+
+    .wire-frame-theme h2 {
+        font-size: 1.0rem;
+    }
+
+    button[type=submit] {
+
+        font-size: 1.5rem;
+
+    }
+}
+
+
+@media (max-width: 576px) {
+    .header-branner-text {
+        font-size: 2.8rem
+    }
+
+    .wire-frame-theme {
+        margin: 0rem 0px;
+        padding: 2rem 0rem !important;
+        color: black;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+        align-items: center;
+        background: none
+    }
+}

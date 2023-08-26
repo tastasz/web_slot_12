@@ -1,0 +1,175 @@
+<div class="nav-bar">
+    <div class="container h-100">
+        <div class="w-100 h-100 d-md-flex d-none align-items-center py-3">
+            <div class="heigt-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                style="cursor: pointer;">
+                <img src="./static/nav/hamburger@2x.png" style="height: inherit;" alt="">
+            </div>
+            <div class="heigt-icon ms-5 floting">
+                <img src="./static/ele/2.logo.png" class="" style="height: inherit;" alt="">
+            </div>
+            <div class="ms-auto"></div>
+            <a href="./login.html" style="text-decoration: none !important;">
+                <div class="heigt-icon hover-zoom">
+                    <img src="./static/nav/3.sign in@2x.png" style="height: inherit;" alt="">
+                </div>
+            </a>
+            <a href="./register.html" style="text-decoration: none !important;">
+                <div class="heigt-icon hover-zoom  ms-3">
+                    <img src="./static/nav/4.register@2x.png" style="height: inherit;" alt="">
+                </div>
+            </a>
+        </div>
+        <div class=" h-100 row py-3 d-flex d-md-none">
+            <div class="col-4 d-flex align-items-center">
+                <div class="heigt-icon-sm ms-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    style="cursor: pointer; ">
+                    <img src="./static/nav/hamburger@2x.png" style="height: inherit;" alt="">
+                </div>
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-center">
+                <div class="heigt-icon-sm floting">
+                    <img src="./static/ele/2.logo.png" style="height: inherit;" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Site Drawer -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" id="offcanvasScrolling" data-bs-delay='{"show":0,"hide":0}'
+    aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+
+        <span class="material-symbols-outlined ms-auto close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+            close
+        </span>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+    </div>
+    <div class="offcanvas-body">
+
+        <div class="heigt-icon floting text-center">
+            <img src="./static/ele/2.logo.png" class="" style="height: inherit;" alt="">
+        </div>
+        <div class="menu-list row mt-5">
+            <a class="col-12 py-3" href="./index.html" style="text-decoration: none !important;">
+                <div class="menu-item   text-center">หน้าแรก
+                </div>
+            </a>
+            <a class="col-12 py-3" href="./login.html" style="text-decoration: none !important;">
+                <div class="menu-item    text-center">เข้าสู่ระบบ
+                </div>
+            </a>
+            <a class="col-12 py-3" href="./register.html" style="text-decoration: none !important;">
+                <div class="menu-item    text-center">สมัครสมาชิก
+                </div>
+            </a>
+            <a class="col-12 py-3" href="./promotion.html" style="text-decoration: none !important;">
+                <div class="menu-item    text-center">โปรโมชั่น
+                </div>
+            </a>
+            <a class="col-12 py-3" href="#" style="text-decoration: none !important;">
+                <div class="menu-item    text-center">กิจกรรม
+                </div>
+            </a>
+
+            <a class="col-12 py-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                style="text-decoration: none !important;">
+                <div class="menu-item    text-center">ติดต่อเรา
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel"></h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <h1>ติดต่อทีมงานได้ตลอด 24 ชั่วโมง
+                </h1>
+                <img src="./static/qrcode.png" alt="">
+                <p>LINE ID : @TemplateNew2</p>
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<style lang="scss" scoped>
+    .menu-item {
+        font-size: 2.0rem;
+        color: white;
+
+    }
+
+    .menu-item:hover {
+        color: var(--color-main);
+    }
+
+    .close-btn {
+        font-size: 3rem;
+        cursor: pointer;
+        color: var(--color-main);
+        font-weight: 900;
+    }
+
+    .offcanvas-backdrop.show {
+        opacity: .3 !important;
+    }
+
+    .offcanvas {
+        --bs-offcanvas-color: #fff;
+        --bs-offcanvas-bg: rgba(0, 0, 0, .8)
+    }
+
+    .heigt-icon {
+        height: 45px;
+
+    }
+
+    .heigt-icon-sm {
+        height: 32px;
+    }
+
+    .hover-zoom {
+        transition: 0.3s;
+    }
+
+    .hover-zoom:hover {
+        transform: scale(1.1)
+    }
+
+    .floting {
+        transform: translatey(0px);
+        animation: 3s infinite alternate float;
+
+    }
+
+    @keyframes float {
+        0% {
+            /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+            transform: translatey(0px);
+        }
+
+        50% {
+            /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+            transform: translatey(-5px);
+        }
+
+        100% {
+            /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+            transform: translatey(0px);
+        }
+    }
+</style>

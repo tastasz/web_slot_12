@@ -1,0 +1,30 @@
+.glass {
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.glass:after {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: -10px;
+    height: 120%;
+    width: 30px;
+    background: rgba(255, 255, 255, .3);
+    filter: blur(7px);
+    transform: translateX(-10px) rotate(-30deg);
+    -webkit-animation: 1s linear infinite shine;
+    animation: 1s linear infinite shine;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px
+    }
+
+
+    100% {
+        left: 100%
+    }
+}
