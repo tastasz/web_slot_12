@@ -202,11 +202,15 @@
 }
 
 
-.bg-promote .frame-bg-image {
-    width: 70vw;
+.bg-promote .frame-bg {
+    width: 100vw;
     z-index: 2;
     position: absolute;
     margin-top: 3rem;
+}
+
+.frame-bg-image {
+    width: 100%;
 }
 
 .bg-promote .frame-image {
@@ -214,14 +218,23 @@
     padding: 0 5vw;
 }
 
-.bg-promote .frame-image img {
+#pro_label {
+    width: 70%;
+}
+
+.bg-promote .frame-image .slider-carousel img {
     z-index: 5;
 }
 
 
 @media (max-width: 420px) {
-    .bg-promote .frame-bg-image {
-        width: 101vw;
+    #pro_label {
+        width: 100%;
+        padding-bottom: 0.5rem;
+    }
+
+    .bg-promote .frame-bg {
+        width: 100vw;
         z-index: 2;
         position: absolute;
         margin-top: 3rem;

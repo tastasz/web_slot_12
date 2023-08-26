@@ -55,16 +55,18 @@
     </div>
     <div class="bg-promote py-3">
 
-        <div class="frame-bg w-100 d-flex justify-content-center">
-            <img class="frame-bg-image " src="./static/promote/promotion background@2x.png"></img>
+        <div class="frame-bg ">
+            <div class="container  d-flex justify-content-center">
+                <img class="frame-bg-image " src="./static/promote/promotion background@2x.png"></img>
+            </div>
         </div>
 
-        <div class="container">
-            <div class="frame-image">
-                <div class="w-100 d-flex justify-content-center mb-md-4 mb-1">
-                    <img src="./static/promote/โปรโมชั่นที่น่าสนใจ@2x.png" style="width: inherit;"></img>
-                </div>
 
+        <div class="container">
+            <div class="d-flex justify-content-center mb-md-4 mb-1 z-100">
+                <img id="pro_label" src="./static/promote/โปรโมชั่นที่น่าสนใจ@2x.png" style="z-index: 5;"></img>
+            </div>
+            <div class="frame-image">
                 <div class="slider-carousel pb-3" style="z-index: 5;">
                     <div>
                         <img src="./static/promote/pro_1.png" class="w-100">
@@ -90,54 +92,7 @@
         </div>
     </div>
 
-    <div class="bg-header-2 ">
-        <div class="container">
-            <div data-aos="fade-up" class=" d-flex justify-content-center flex-column w-100 pt-4">
-                <div class="jackpot-package w-100">
-                    <img class="jackpot-image d-md-block d-none" src="./static/jackpot/bg-lg.png"></img>
-                    <img class="jackpot-image d-md-none d-block" src="./static/jackpot/jackpotx4.png"></img>
 
-                </div>
-                <div class="row m-0 slider-jackpot-position">
-                    <div class="col-md-5 col-4"></div>
-                    <div class="col-md-7 col-8 slider-jackpot">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img src="./static/jackpot/element.png" class="slider-jackpot-img">
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img src="./static/jackpot/element.png" class="slider-jackpot-img">
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img src="./static/jackpot/element.png" class="slider-jackpot-img">
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <img src="./static/jackpot/element.png" class="slider-jackpot-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="py-3">
-                <h1 class="text-md-center text-start w-100" style="color: #8500F4;">ข้อดีของการเล่น pgslot เว็บตรง
-                    ไม่ผ่านเอเย่นต์
-                </h1>
-                <h2 class="pb-2" style="color: #fff;">
-                    ด้วยสถานการณ์โรคระบาดในปัจจุบัน ส่งผลให้สภาพคล่องทางการเงินของแต่ละคนติดขัดเป็นอย่างมาก
-                    ทั้งในเรื่องของการงานที่มีการเปลี่ยนแปลงไปจากเมื่อก่อน ทำให้หลาย ๆ ท่าน
-                    ต่างต้องการช่องทางสร้างรายได้เสริมเข้ามา เพื่อที่จะหาเงินในการดำรงชีวิต
-                    และช่องทางการสร้างรายได้จากโลกสล็อตออนไลน์ จะเป็นอีกหนึ่งช่องทางที่ได้รับความนิยมเป็นอย่างมาก
-                    เนื่องจากคุณไม่ต้องเดินทางออกข้างนอกบ้าน ไม่เสี่ยงต่อโรคระบาด
-                    แถมยังสามารถสร้างรายได้ได้ในทุกวันอีกด้วย ซึ่งช่องทางการเดิมพันผ่านเว็บไซต์ออนไลน์
-                    จะเป็นตัวเลือกที่ดีเลยทีเดียว เพราะในปัจจุบันมีเว็บเดิมพันเปิดให้บริการอยู่มากมาย
-                    แถมยังมีรูปแบบการเดิมพันให้เลือกหลากหลาย และเกมเดิมพันที่ได้รับความนิยมจากเหล่ามือใหม่
-                    และผู้ที่ต้องการสร้างรายได้จากการเดิมพันคงจะหนีไม่พ้น เกมสล็อตออนไลน์อย่างแน่นอน
-                    เพราะฉะนั้นในวันนี้จะพาทุกท่านไปทำความรู้จักกับเว็บไซต์เดิมพัน slot ทุนน้อย ลงเดิมพันได้อย่างง่ายดาย
-                    และใช้ทุนไม่เยอะ
-                </h2>
-            </div>
-
-
-        </div>
-    </div>
 
     <div id="footer-placeholder">
     </div>
@@ -170,56 +125,16 @@
                         </div>`
             }
             $("#events").html(html)
-            $(".slider-jackpot").slick({
-                // centerMode: true,
-                arrows: false,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                autoplaySpeed: 2000,
-                autoplay: true,
-                speed: 700,
-                responsive: [
-
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '5px',
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            })
             $(".slider-carousel").slick({
                 arrows: false,
-                // centerMode: true,
-                // centerPadding: '100px',
+
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
                 autoplaySpeed: 2000,
                 autoplay: true,
                 speed: 700,
-                // responsive: [
-                //     {
-                //         breakpoint: 768,
-                //         settings: {
-                //             centerMode: false,
-                //             centerPadding: '10px',
-                //             slidesToShow: 2
-                //         }
-                //     },
-                //     {
-                //         breakpoint: 480,
-                //         settings: {
-                //             centerMode: false,
-                //             centerPadding: '10px',
-                //             slidesToShow: 1
-                //         }
-                //     }
-                // ]
+
             });
 
         });
