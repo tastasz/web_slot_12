@@ -181,11 +181,44 @@
     background: transparent linear-gradient(180deg, #436AE3 0%, #8F17E9 100%) 0% 0% no-repeat padding-box;
 }
 
+.bg-btn {
+    position: absolute;
+    width: 100%;
+    transform: translate(0, -70%);
 
+}
 
+.bg-btn a {
+    transition: 0.3s;
+}
 
-.bg-game {
-    background-image: url("./static/game/bg2.png");
+.bg-btn a:hover {
+    scale: 1.03;
+}
+
+.bg-tab {
+    background: transparent linear-gradient(135deg, #436AE3 0%, #8F17E9 100%) 0% 0% no-repeat padding-box;
+}
+
+.bg-tab .tab {
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.bg-tab .tab:hover {
+    background: rgb(0, 0, 0, 0.2);
+
+}
+
+@media (max-width: 420px) {
+    .bg-tab .tab {
+        border-radius: 2px;
+    }
+}
+
+.bg-sum {
+    background-image: url("./static/Background.png");
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center center;
@@ -193,13 +226,7 @@
 }
 
 
-.bg-promote {
-    background-image: url("./static/promote/bg3.png");
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
+
 
 
 .bg-promote .frame-bg {
@@ -269,14 +296,6 @@
 
 }
 
-.bg-header-2 {
-    background-image: url("./static/bg2/bg2.png");
-    min-height: 10vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
 
 
 

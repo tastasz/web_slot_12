@@ -162,25 +162,16 @@
 
 <div class="stick-footer d-block d-md-none">
     <div class="row m-0">
-        <div class="col-6 p-0">
-            <a href="./register.html" style="text-decoration: none !important;">
-                <div class="footer-btn register-btns">
-                    <p class="m-0">
-                        สมัครสมาชิก
-                    </p>
-                </div>
+        <div class="col-6 p-0 d-flex justify-content-start">
+            <a href="./register.html" style="width: 109%;" class="d-flex justify-content-start">
+                <img src="./static/Mobile/register.png" alt="" style="width: inherit;">
             </a>
 
         </div>
-        <div class="col-6 p-0">
-            <a href="./login.html" style="text-decoration: none !important;">
-                <div class="footer-btn login-btn">
-                    <p class="m-0">
-                        เข้าสู่ระบบ
-                    </p>
-                </div>
+        <div class="col-6 p-0 d-flex justify-content-end">
+            <a href="./login.html" style="width: 109%;" class="d-flex justify-content-end">
+                <img src="./static/Mobile/login.png" alt="" style="width: inherit;">
             </a>
-
         </div>
     </div>
 </div>
@@ -203,6 +194,7 @@
         left: 0;
         bottom: 0;
         width: 100%;
+        z-index: 999;
     }
 
     .stick-footer .footer-btn {
@@ -215,17 +207,7 @@
 
     }
 
-    .footer-btn.register-btns {
-        background: linear-gradient(180deg, #3672c6 0, #1b3465 100%);
-    }
 
-    .footer-btn.login-btn {
-        background: linear-gradient(180deg, #ffca11 0, #ff9303 100%);
-    }
-
-    .footer-btn p {
-        animation: 1s ease-in-out .8s infinite alternate zoom;
-    }
 
     @keyframes zoom {
         0% {

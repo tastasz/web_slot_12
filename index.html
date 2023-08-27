@@ -38,59 +38,100 @@
             <img src="./static/banner/banner@3x.png" style="width: 100vw; height: auto;" alt="">
         </div>
     </div>
+    <div class="bg-btn d-flex justify-content-center">
+        <div class="container d-flex justify-content-center">
+            <div class="row m-0" style="width: 50%;">
+                <div class="col-6 p-0 d-flex justify-content-start">
+                    <a href="./register.html" style="width: 109%;" class="d-flex justify-content-start">
+                        <img src="./static/Mobile/register.png" alt="" style="width: inherit;">
+                    </a>
 
-    <div class="bg-game py-2">
-        <div class="container">
-            <div class="row" id="events">
-
-            </div>
-        </div>
-    </div>
-    <div class="bg-header-2 ">
-        <div class="container  d-flex justify-content-center">
-            <img src="./static/bg2/model2.png" style="width: 100vw; height: auto;" alt="">
-
-
-        </div>
-    </div>
-    <div class="bg-promote py-3">
-
-        <div class="frame-bg ">
-            <div class="container  d-flex justify-content-center">
-                <img class="frame-bg-image " src="./static/promote/promotion background@2x.png"></img>
-            </div>
-        </div>
-
-
-        <div class="container">
-            <div class="d-flex justify-content-center mb-md-4 mb-1 z-100">
-                <img id="pro_label" src="./static/promote/โปรโมชั่นที่น่าสนใจ@2x.png" style="z-index: 5;"></img>
-            </div>
-            <div class="frame-image">
-                <div class="slider-carousel pb-3" style="z-index: 5;">
-                    <div>
-                        <img src="./static/promote/pro_1.png" class="w-100">
-                    </div>
-                    <div>
-                        <img src="./static/promote/pro_2.png" class="w-100">
-                    </div>
-                    <div>
-                        <img src="./static/promote/pro_3.png" class="w-100">
-                    </div>
-                    <div>
-                        <img src="./static/promote/pro_4.png" class="w-100">
-                    </div>
-                    <div>
-                        <img src="./static/promote/pro_2.png" class="w-100">
-                    </div>
+                </div>
+                <div class="col-6 p-0 d-flex justify-content-end">
+                    <a href="./login.html" style="width: 109%;" class="d-flex justify-content-end">
+                        <img src="./static/Mobile/login.png" alt="" style="width: inherit;">
+                    </a>
                 </div>
             </div>
-            <div class="w-100 d-flex justify-content-center ">
-                <img src="./static/promote/Mask Group 7@2x.png" style="width: inherit;z-index: 5;"></img>
+        </div>
 
+
+
+    </div>
+    <div class="bg-tab pt-md-5 pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col tab px-0 px-md-2">
+                    <img src="./static/tab/tab_1.png" style="width: inherit;" alt="">
+                </div>
+                <div class="col tab px-0 px-md-2">
+                    <img src="./static/tab/tab_2.png" style="width: inherit;" alt="">
+                </div>
+                <div class="col tab px-0 px-md-2">
+                    <img src="./static/tab/tab_3.png" style="width: inherit;" alt="">
+                </div>
+                <div class="col tab px-0 px-md-2">
+                    <img src="./static/tab/tab_4.png" style="width: inherit;" alt="">
+                </div>
+                <div class="col tab px-0 px-md-2">
+                    <img src="./static/tab/tab_5.png" style="width: inherit;" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bg-sum">
+        <div class="bg-game py-2">
+            <div class="container">
+                <div class="row" id="events">
+
+                </div>
+            </div>
+        </div>
+        <div class="container  d-flex justify-content-center">
+            <img src="./static/bg2/model2.png" style="width: 100vw; height: auto;" alt="">
+        </div>
+        <div class="bg-promote py-3">
+
+            <div class="frame-bg ">
+                <div class="container  d-flex justify-content-center">
+                    <img class="frame-bg-image " src="./static/promote/promotion background@2x.png"></img>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="d-flex justify-content-center mb-md-4 mb-1 z-100">
+                    <img id="pro_label" src="./static/promote/โปรโมชั่นที่น่าสนใจ@2x.png" style="z-index: 5;"></img>
+                </div>
+                <div class="frame-image">
+                    <div class="slider-carousel pb-3" style="z-index: 5;">
+                        <div>
+                            <img src="./static/promote/pro_1.png" class="w-100">
+                        </div>
+                        <div>
+                            <img src="./static/promote/pro_2.png" class="w-100">
+                        </div>
+                        <div>
+                            <img src="./static/promote/pro_3.png" class="w-100">
+                        </div>
+                        <div>
+                            <img src="./static/promote/pro_4.png" class="w-100">
+                        </div>
+                        <div>
+                            <img src="./static/promote/pro_2.png" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 d-flex justify-content-center ">
+                    <img src="./static/promote/Mask Group 7@2x.png" style="width: inherit;z-index: 5;"></img>
+
+                </div>
             </div>
         </div>
     </div>
+
 
 
 
@@ -109,8 +150,6 @@
         $(function () {
             $("#nav-placeholder").load("navbar_v2.html");
             $("#footer-placeholder").load("footer_v2.html");
-            $("#snow").load("./snow/snow.html");
-
             let html = ""
 
             let event = ["PG Soft", "Jill Game", "Joker", "Pragmatic Play", "Sphinx", "Dragoon Soft", "KA Gaming", "Rich88"]
@@ -134,7 +173,24 @@
                 autoplaySpeed: 2000,
                 autoplay: true,
                 speed: 700,
-
+                responsive: [
+                    // {
+                    //     breakpoint: 768,
+                    //     settings: {
+                    //         centerMode: false,
+                    //         centerPadding: '10px',
+                    //         slidesToShow: 2
+                    //     }
+                    // },
+                    // {
+                    //     breakpoint: 480,
+                    //     settings: {
+                    //         // centerMode: false,
+                    //         // centerPadding: '10px',
+                    //         slidesToShow: 1
+                    //     }
+                    // }
+                ]
             });
 
         });
