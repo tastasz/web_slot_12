@@ -233,7 +233,7 @@
     width: 100vw;
     z-index: 2;
     position: absolute;
-    margin-top: 3rem;
+    transform: translateY(3rem);
 }
 
 .frame-bg-image {
@@ -261,10 +261,16 @@
     }
 
     .bg-promote .frame-bg {
+        overflow: hidden;
         width: 100vw;
         z-index: 2;
         position: absolute;
-        margin-top: 3rem;
+        transform: translateY(2rem);
+    }
+
+    .frame-bg-image {
+
+        width: 200%;
     }
 
     .bg-promote .frame-image {
