@@ -1,18 +1,103 @@
 <div class="nav-bar">
     <div class="container h-100">
-        <div class="w-100 h-100 d-flex align-items-center py-3 justify-content-center">
-
+        <div class="w-100 h-100 d-flex align-items-center py-3 justify-content-between">
+            <div class="heigt-icon d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                style="cursor: pointer;">
+                <img src="./static/nav/hamburger@2x.png" style="height: inherit;" alt="">
+            </div>
+            <div class="d-md-block d-none"></div>
             <div class="heigt-icon  floting glass">
                 <a href="./" style="height: inherit;">
                     <img src="./static/ele/2.logo.png" style="height: inherit;" alt="">
                 </a>
             </div>
+            <div style="width: 29px;"></div>
+        </div>
+    </div>
+    <div class="secound-nav d-md-none d-flex justify-content-center align-items-center py-2">
+        <div class="container ">
+            <div class="secound-nav-text text-center">
+                <p class="m-0" style="font-size: 18px;">
+                    สมัครสมาชิกวันนี้ พร้อมรับสิทธิพิเศษเพียบ
+                    <p->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Site Drawer -->
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" id="offcanvasScrolling" data-bs-delay='{"show":0,"hide":0}'
+    aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+        <span class="material-symbols-outlined ms-auto close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+            close
+        </span>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+    </div>
+    <div class="offcanvas-body">
+        <div class="heigt-icon floting text-center">
+            <img src="./static/ele/2.logo.png" class="" style="height: inherit;" alt="">
+        </div>
+        <div class="menu-list row mt-5">
+            <a class="col-12 py-3" href="./index.html" style="text-decoration: none !important;">
+                <div class="menu-item   text-center">หน้าแรก
+                </div>
+            </a>
+            <a class="col-12 py-3" href="./login.html" style="text-decoration: none !important;">
+                <div class="menu-item    text-center">เข้าสู่ระบบ
+                </div>
+            </a>
+            <a class="col-12 py-3" href="./register.html" style="text-decoration: none !important;">
+                <div class="menu-item    text-center">สมัครสมาชิก
+                </div>
+            </a>
+            <a class="col-12 py-3" href="./promotion.html" style="text-decoration: none !important;">
+                <div class="menu-item    text-center">โปรโมชั่น
+                </div>
+            </a>
+            <a class="col-12 py-3" href="#" style="text-decoration: none !important;">
+                <div class="menu-item    text-center">กิจกรรม
+                </div>
+            </a>
+
+            <a class="col-12 py-3" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                style="text-decoration: none !important;">
+                <div class="menu-item    text-center">ติดต่อเรา
+                </div>
+            </a>
         </div>
     </div>
 </div>
 
-
 <style lang="scss" scoped>
+    .menu-item {
+        font-size: 2.0rem;
+        color: white;
+
+    }
+
+    .menu-item:hover {
+        color: var(--color-main);
+    }
+
+    .close-btn {
+        font-size: 3rem;
+        cursor: pointer;
+        color: var(--color-main);
+        font-weight: 900;
+    }
+
+    .offcanvas-backdrop.show {
+        opacity: .3 !important;
+    }
+
+    .offcanvas {
+        --bs-offcanvas-color: #fff;
+        --bs-offcanvas-bg: rgba(0, 0, 0, .8)
+    }
+
+
+
     .heigt-icon {
         height: 57px;
     }
@@ -28,6 +113,17 @@
     .floting {
         transform: translatey(0px);
         animation: 3s infinite alternate float;
+    }
+
+    .secound-nav {
+        height: var(--secound-nav-height);
+        background-color: #84089A;
+    }
+
+    .secound-nav-text {
+        color: black;
+        background: white;
+        border-radius: 0.3rem;
     }
 
     @media (max-width: 420px) {

@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="./snow/snow.css" />
     <link rel="stylesheet" href="shineEffect.css" />
 
-
-
-
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
@@ -28,34 +25,37 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick-slider.css" />
+
 </head>
 
-<body class="bg-black">
+<body class="bg-black bg-main">
     <div id="nav-placeholder">
     </div>
     <div class="bg-header">
         <div class="container d-flex justify-content-center">
             <img src="./static/banner/banner@3x.png" style="width: 100vw; height: auto;" alt="">
         </div>
-    </div>
-    <div class="bg-btn d-flex justify-content-center">
-        <div class="container d-flex justify-content-center">
-            <div class="row m-0" style="width: 50%;">
-                <div class="col-6 p-0 d-flex justify-content-start">
-                    <a href="./register.html" style="width: 109%;" class="d-flex justify-content-start">
-                        <img src="./static/Mobile/register.png" alt="" style="width: inherit;">
-                    </a>
+        <div class="bg-btn d-flex justify-content-center">
+            <div class="container d-flex justify-content-center">
+                <div class="row m-0 bg-btn-group">
+                    <div class="col-6 p-0 d-flex justify-content-start">
+                        <a href="./register.html" style="width: 109%;" class="d-flex justify-content-start">
+                            <img src="./static/Mobile/register.png" alt="" style="width: inherit;">
+                        </a>
 
-                </div>
-                <div class="col-6 p-0 d-flex justify-content-end">
-                    <a href="./login.html" style="width: 109%;" class="d-flex justify-content-end">
-                        <img src="./static/Mobile/login.png" alt="" style="width: inherit;">
-                    </a>
+                    </div>
+                    <div class="col-6 p-0 d-flex justify-content-end">
+                        <a href="./login.html" style="width: 109%;" class="d-flex justify-content-end">
+                            <img src="./static/Mobile/login.png" alt="" style="width: inherit;">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg-tab pt-md-5 pt-3 pb-3">
+
+    <div class="bg-tab pt-md-5 pt-3 pb-3  d-md-block d-none">
         <div class="container">
             <div class="row">
                 <div class="col tab px-0 px-md-2">
@@ -78,14 +78,62 @@
 
     </div>
 
-    <div class="bg-sum">
-        <div class="bg-game py-2">
+    <div class="bg-sum ">
+        <div class="bg-game py-2 d-md-block d-none">
             <div class="container">
                 <div class="row" id="events">
                 </div>
             </div>
         </div>
-        <div class="container  d-flex justify-content-center" data-aos="fade-up">
+
+        <div class="pt-3 py-2 text-white d-block d-md-none mb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="d-block d-md-none col-4">
+                        <div class="vertical-menu d-flex flex-column  h-100 justify-content-between">
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="icon-img p-1">
+                                    <img src="./static/Mobile/tab/1.png" style="width: 100%;">
+                                </div>
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="icon-img p-1">
+                                    <img src="./static/Mobile/tab/2.png" style="width: 100%;">
+                                </div>
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="icon-img p-1">
+                                    <img src="./static/Mobile/tab/3.png" style="width: 100%;">
+                                </div>
+                            </div>
+
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="icon-img p-1">
+                                    <img src="./static/Mobile/tab/4.png" style="width: 100%;">
+                                </div>
+                            </div>
+
+
+                            <div class="w-100 d-flex justify-content-center">
+                                <div class="icon-img p-1">
+                                    <img src="./static/Mobile/tab/5.png" style="width: 100%;">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-8">
+                        <div class="row" id="events-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container  d-flex justify-content-center">
             <img src="./static/bg2/model2.png" style="width: 100vw; height: auto;" alt="">
         </div>
         <div class="bg-promote py-3">
@@ -100,8 +148,8 @@
                 <div class="d-flex justify-content-center mb-md-4 mb-1 z-100">
                     <img id="pro_label" src="./static/promote/โปรโมชั่นที่น่าสนใจ@2x.png" style="z-index: 5;"></img>
                 </div>
-                <div class="frame-image">
-                    <div class="slider-carousel pb-3" style="z-index: 5;">
+                <div class="frame-image h-100 pb-3">
+                    <div class="slider-carousel h-100 w-100" style="z-index: 5;">
                         <div>
                             <img src="./static/promote/pro_1.png" class="w-100">
                         </div>
@@ -120,8 +168,7 @@
                     </div>
                 </div>
                 <div class="w-100 d-flex justify-content-center">
-                    <img src="./static/promote/Mask Group 7@2x.png" style="width: inherit;z-index: 5;"
-                        data-aos="fade-up"></img>
+                    <img src="./static/promote/Mask Group 7@2x.png" style="width: inherit;z-index: 5;"></img>
 
                 </div>
             </div>
@@ -159,30 +206,42 @@
                         </div>`
             }
             $("#events").html(html)
+
+            html = ""
+            for (let [i, value] of event.entries()) {
+                html += ` <div class="col-md-3 col-6  py-1 px-2" >
+                            <div class="w-100 text-center">
+                                <img src="./static/game/image_${i + 1}.png" class="pb-1 w-100" >
+                                <div class="d-flex justify-content-center  text-event">
+                                    ${value}
+                                </div>
+                            </div>
+                        </div>`
+            }
+            $("#events-sm").html(html)
+
+
+
             $(".slider-carousel").slick({
-                arrows: false,
 
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
+                arrows: false,
                 autoplaySpeed: 2000,
                 autoplay: true,
                 speed: 700,
+                pauseOnHover: true,
                 responsive: [
-                    // {
-                    //     breakpoint: 768,
-                    //     settings: {
-                    //         centerMode: false,
-                    //         centerPadding: '10px',
-                    //         slidesToShow: 2
-                    //     }
-                    // },
+
                     {
                         breakpoint: 420,
                         settings: {
-                            // centerMode: false,
-                            // centerPadding: '10px',
-                            slidesToShow: 2
+                            centerPadding: '20%',
+                            centerMode: true,
+                            slidesToShow: 1,
+
+
                         }
                     }
                 ]
