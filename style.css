@@ -149,6 +149,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 
@@ -187,11 +190,7 @@
     }
 }
 
-.bg-header .mint1 {
-    border-radius: 2rem;
-    color: white;
-    background: transparent linear-gradient(180deg, #436AE3 0%, #8F17E9 100%) 0% 0% no-repeat padding-box;
-}
+
 
 .bg-btn {
     position: absolute;
